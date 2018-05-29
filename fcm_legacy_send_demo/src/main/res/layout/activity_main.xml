@@ -1,0 +1,163 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey_700"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fcm_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Legacy FCM Key : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/send_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Send To :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fcm_key" />
+
+    <TextView
+        android:id="@+id/data_stru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Sned Data : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_to" />
+
+    <EditText
+        android:id="@+id/fcm_key_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Input FCM Key"
+        app:layout_constraintBottom_toBottomOf="@+id/fcm_key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fcm_key"
+        app:layout_constraintTop_toTopOf="@+id/fcm_key" />
+
+    <EditText
+        android:id="@+id/receiver_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Input receiver id"
+        android:textSize="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/send_to"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/send_to"
+        app:layout_constraintTop_toTopOf="@+id/send_to" />
+
+    <EditText
+        android:id="@+id/data_key_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please input Key"
+        app:layout_constraintEnd_toStartOf="@+id/data_key_value_1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_stru" />
+
+    <EditText
+        android:id="@+id/data_key_value_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Input value"
+        app:layout_constraintBottom_toBottomOf="@+id/data_key_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/data_key_1"
+        app:layout_constraintTop_toTopOf="@+id/data_key_1" />
+
+    <EditText
+        android:id="@+id/data_key_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please input Key"
+        app:layout_constraintEnd_toEndOf="@+id/data_key_1"
+        app:layout_constraintEnd_toStartOf="@+id/data_key_value_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_key_1" />
+
+    <EditText
+        android:id="@+id/data_key_value_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Input value"
+        app:layout_constraintBottom_toBottomOf="@+id/data_key_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/data_key_2"
+        app:layout_constraintTop_toTopOf="@+id/data_key_2" />
+
+    <EditText
+        android:id="@+id/data_key_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please input Key"
+        app:layout_constraintEnd_toEndOf="@+id/data_key_2"
+        app:layout_constraintEnd_toStartOf="@+id/data_key_value_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_key_2" />
+
+    <EditText
+        android:id="@+id/data_key_value_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Input value"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/data_key_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/data_key_3"
+        app:layout_constraintTop_toTopOf="@+id/data_key_3" />
+
+    <EditText
+        android:id="@+id/data_key_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please input Key"
+        app:layout_constraintEnd_toEndOf="@+id/data_key_3"
+        app:layout_constraintEnd_toStartOf="@+id/data_key_value_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_key_3" />
+
+    <EditText
+        android:id="@+id/data_key_value_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Input value"
+        app:layout_constraintBottom_toBottomOf="@+id/data_key_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/data_key_4"
+        app:layout_constraintTop_toTopOf="@+id/data_key_4"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Send FCM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
